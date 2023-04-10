@@ -19,11 +19,11 @@ document.addEventListener("click", (event) => {
     node.classList.toggle("fa-lock-open");
     node.classList.toggle("fa-lock");
   } else if (type === "copy") {
-    copyToClickboard(event.target.textContent);
+    copyToClickBoard(event.target.textContent);
   }
 });
 
-function gerenerateRandomColor() {
+function generationRandomColor() {
  
   const hexCodes = "0123456789ABCDEF";
   let color = "";
@@ -33,7 +33,7 @@ function gerenerateRandomColor() {
   return "#" + color;
 }
 
-function copyToClickboard(text) {
+function copyToClickBoard(text) {
   return navigator.clipboard.writeText(text);
 }
 
